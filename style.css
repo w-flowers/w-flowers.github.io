@@ -1,0 +1,35 @@
+.header {
+	background-color: rgb(180, 200, 220);
+	font-style: italic;
+}
+
+.grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+#projects {
+	background-color: #FAF0DA;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	border: gray 4px solid;
+}
+
+#proj-list {
+	background-color: #FAE0BA;
+	border: black 2px solid;
+	grid-column: 1 / span 1;
+	grid-row: 1 / 2;
+	padding: 10px;
+	spacing: 4px;
+	line-height: 1.5;
+}
+
+li {
+	font-size: 22px;
+}
+
+p {
+	line-height: 1.5;
+}
