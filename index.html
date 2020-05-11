@@ -2,7 +2,6 @@
 <html>
 <head>
 	<link href="style.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -12,23 +11,23 @@
 	</div>
 	<div class="grid">
 		<div id="projects">
-			<h2>Current Projects</h2>
-			<h4 class="proj-heading"><a href="https://github.com/w-flowers/Kenken">Kenken</a></h4>
-  		<p>This project started as an excuse to implement linked lists, but grew from there into a full fledged Kenken generator, solver and game. Throughout this project, I had to develop my C skills extensively, in particular building my knowledge of memory allocation, C data types and recursive algorithms. I also created a program "GUI-Kenken" which required me to learn SDL2, a common graphics library with windowing and rendering capabilities.</p>
- 		 <h4 class="proj-heading"><a href="https://github.com/w-flowers/w-flowers.github.io">Website</a></h4>
-  		<p>A simple website to showcase the development of my software development knoledge. This currently contains only simple HTML, but will be modified in the future to add some Javascript and CSS.</p>
-  		<h4 class="proj-heading">Algorithms in C</h4>
-  		<p>I have been working through the algorithms in this textbook, and implementing them in C. I am currently up to Trees, and though I have seen these before at uni, it is a good recap.</p>
+			<h2 id="mainhead">Project</h2>
+			<h4 class="proj-heading kenken" hidden><a href="https://github.com/w-flowers/Kenken">Kenken</a></h4>
+  		<p class="proj-desc kenken" hidden>This project started as an excuse to implement linked lists, but grew from there into a full fledged Kenken generator, solver and game. Throughout this project, I had to develop my C skills extensively, in particular building my knowledge of memory allocation, C data types and recursive algorithms. I also created a program "GUI-Kenken" which required me to learn SDL2, a common graphics library with windowing and rendering capabilities.</p>
+ 		 <h4 class="proj-heading website" hidden><a href="https://github.com/w-flowers/w-flowers.github.io">Website</a></h4>
+  		<p class="proj-desc website" hidden>A simple website to showcase the development of my software development knowledge. This currently contains only simple HTML, but will be modified in the future to add some Javascript and CSS.</p>
+  		<h4 class="proj-heading algos" hidden>Algorithms in C</h4>
+  		<p class="proj-desc algos" hidden>I have been working through the algorithms in this textbook, and implementing them in C. I am currently up to Trees, and though I have seen these before at uni, it is a good recap.</p>
 		</div>
 		<div id="proj-list">
 			<h2>Current Projects</h2>
 			<ul>
-				<li>Kenken</li>
-				<li>Website</li>
-				<li>Algorithms in C</li>
+				<li class="kenken">Kenken</li>
+				<li class="website">Website</li>
+				<li class="algos">Algorithms in C</li>
 			</ul>
 		</div>
 	</div>
-	<button>button</button>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

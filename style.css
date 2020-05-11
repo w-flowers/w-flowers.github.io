@@ -14,6 +14,7 @@
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	border: gray 4px solid;
+	padding: 10px;
 }
 
 #proj-list {
@@ -24,6 +25,10 @@
 	padding: 10px;
 	spacing: 4px;
 	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
 }
 
 li {
