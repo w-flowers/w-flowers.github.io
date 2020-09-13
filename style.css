@@ -1,5 +1,5 @@
 .header {
-	background-color: rgb(180, 200, 220);
+	background-color: rgb(200, 220, 240);
 	font-style: italic;
 }
 
@@ -37,4 +37,5 @@ li {
 
 p {
 	line-height: 1.5;
+   font-size: 18px;
 }
