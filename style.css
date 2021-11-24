@@ -1,8 +1,8 @@
 
 .header {
     position: relative;
-    left: 12%;
-    width: 76%;
+    left: 2%;
+    width: 96%;
 }
 
 .header h1 {
@@ -17,21 +17,21 @@
 
 html {
     background-color: rgb(240, 255, 255);
-    max-width: 1300px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .grid {
     position: relative;
-    left: 12%;
-    width: 76%;
+    left: 2%;
+    width: 96%;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
 
 #projects {
 	background-color: #FAF0DA;
-	grid-column: 2 / 3;
+	grid-column: 2 / 4;
 	grid-row: 1 / 2;
 	border: gray 4px solid;
 	padding: 10px;
