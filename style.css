@@ -1,13 +1,22 @@
 .header {
 	font-style: italic;
+    text-align: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
 }
 
 html {
-   background-color: rgb(240, 2455555, 255);
+   background-color: rgb(240, 255, 255);
+}
+
+body {
+    margin:12px auto;
 }
 
 .grid {
-	width: 100%;
+    padding: 2%;
+	width: 96%;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
@@ -39,6 +48,16 @@ li {
 }
 
 p {
-	line-height: 1.5;
-   font-size: 18px;
+    padding:0 10px;
+	line-height: 1.6;
+   font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+    padding:0 10px;
+    line-height: 1.8;
+}
+
+h3 {
+    font-size: 22px;
 }
