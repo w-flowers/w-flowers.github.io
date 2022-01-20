@@ -1,168 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-	<div class="header">
-	  <h1>W-Flowers Programming Blog</h1>
-	  <h3>About this site:</h3>
-      <p>
-      This website documents the programming projects I have created,
-      and the programming skills that I have been developing. 
-      At university, I learned Haskell and Java, but I took a long 
-      hiatus before returning to programming in 2019. I majored in 
-      Mathematics for my undergrad, and I have a Master of Teaching. 
-      When I returned to programming, I started learning C as a hobby, 
-      and now I have gained experience with multiple programming 
-      languages, alongside knowledge of networking, shell scripting,
-      git, make, and data structures and algorithms.
-      </p>
-      <h3> Languages: </h3>
-      <ul>
-          <li>C</li>
-          <li>C++</li>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>HTML/CSS/Javascript</li>
-          <li>Bash</li>
-          <li>Ocaml</li>
-          <li>Haskell</li>
-          <li>Java</li>
-      </ul>
-	</div>
-	<div class="grid">
-		<div id="projects">
-			<h2 id="mainhead">Click on a project to find out more!</h2>
-			<h4 class="proj-heading kenken" hidden><a href="https://github.com/w-flowers/Kenken">Kenken</a></h4>
-      <div class="proj-desc kenken" hidden>
-          <p>
-          This project started as an excuse to implement linked lists,
-          but grew from there into a full fledged Kenken generator, solver 
-          and game. Throughout this project, I had to develop my C skills 
-          extensively, in particular building my knowledge of memory 
-          allocation, C data types and recursive algorithms. This project 
-          also required me to develop skills in organising and planning 
-          software as I went.
-          </p>
-          <p>
-          I then created a program "GUI-Kenken" which required me to learn 
-          SDL2, a common graphics library with windowing and rendering 
-          capabilities.
-          </p>
-          <p>
-          I have now completed this project, having added loading and 
-          saving features and a start menu. One day I may do a more major 
-          rewrite to allow for variably sized kenkens to be created and 
-          stored, but that is not something that I plan to implement in 
-          the near future.
-          </p>
-          <img src="res/img10.png" alt="finished game" width="432"> 
-          <img src="res/img5.png" alt="menu" width="200">
-          <img src="res/img6.png" alt="load_menu" width="200">
-          <img src="res/img7.png" alt="game in progress" width="432">
-          <img src="res/img8.png" alt="game in progress" width="432">
-          <img src="res/img9.png" alt="new game" width="432">
-          <video width="100%" controls>
-              <source src="res/game_clip_2.mp4" type="video/mp4">
-              Video not supported
-          </video>
-          <p>
-          To view on Github, visit 
-          <a href="https://github.com/w-flowers/Kenken">
-              https://github.com/w-flowers/Kenken
-          </a>
-          </p>
-      </div>
-      <h4 class="proj-heading website" hidden>
-          <a href="https://github.com/w-flowers/w-flowers.github.io">
-              Website
-          </a>
-      </h4>
-      <div class="proj-desc website" hidden>
-        <p>A simple website to showcase the development of my software 
-        development knowledge. This currently contains simple HTML, CSS 
-        and Javascript.
-        </p>
-        <p>Source code for the website can be found here: 
-        <a href="https://github.com/w-flowers/w-flowers.github.io">
-            https://github.com/w-flowers/w-flowers.github.io
-        </a>
-        </p>
-      </div>
-  		<h4 class="proj-heading algos" hidden>
-            <a href="https://github.com/w-flowers/algos_in_c">
-                Algorithms in C
-            </a>
-        </h4>
-      <div class="proj-desc algos" hidden>
-  		  <p>
-          I have been working through the algorithms in this textbook, 
-          and implementing them in C. I have finished Sorting Algorithms, 
-          and am starting to work through the sections on searching 
-          algorithms.
-          </p>
-          <p>
-          The git repository linked contains some of my solutions to the 
-          exercises of this book. 
-          <a href="https://github.com/w-flowers/algos_in_c">
-              https://github.com/w-flowers/algos_in_c
-          </a>
-          </p>
-      </div>
-      <h4 class="proj-heading dateconvert" hidden><a href="https://github.com/w-flowers/py-code">Date Converter</a></h4>
-      <div class="proj-desc dateconvert" hidden>
-          <p>
-          A simple command line Python program that converts a date 
-          from one format to another. An exercise to practice using the 
-          basic control flow constructs and standard library tools 
-          available in Python.
-          </p>
-          <p>
-          The git repository linked contains the source code of this 
-          program in the directory "dateconverter". 
-          <a href="https://github.com/w-flowers/py-code">
-              https://github.com/w-flowers/py-code
-          </a>
-          </p>
-      </div>
-      <h4 class="proj-heading scoredb" hidden>
-          <a href="https://github.com/w-flowers/py-code">
-              Score Database
-          </a>
-      </h4>
-      <div class="proj-desc scoredb" hidden>
-          <p>
-          A library for entering a username, score and time taken into a 
-          sqlite3 database file. Currently contains functions for writing 
-          scores to the database, and returning a list of scores, either 
-          ordered by time entered or by score. I am planning to extend the 
-          scoredb library to allow fetching by username, and fetching by 
-          date range.
-          </p>
-          <p>
-          The git repository linked contains the source code of this 
-          program in the directory "scoredb". 
-          <a href="https://github.com/w-flowers/py-code">
-              https://github.com/w-flowers/py-code
-          </a>
-          </p>
-      </div>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>W-Flowers Programming Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li>Languages</li>
+                    <li>Interests</li>
+                </ul>
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="kenken/index.html">Mathdoku</a></li>
+                    <li><a href="kenken/index.html">Programming Blog</a></li>
+                    <li><a href="kenken/index.html">Pong Clone</a></li>
+                    <li><a href="kenken/index.html">Algorithms in C</a></li>
+                    <li><a href="kenken/index.html">Date Converter</a></li>
+                    <li><a href="kenken/index.html">Score Database</a></li>
+                    <li><a href="kenken/index.html">Microcontroller Programming</a></li>
+                    <li><a href="kenken/index.html">Beej's Guide to Network Programming</a></li>
+                    <li><a href="kenken/index.html">Assorted Shell Scripts</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="proj-list">
-            <h2>Current Projects</h2>
+        <div>
+            <h3>About this site:</h3>
+            <p>
+            This website documents the programming projects I have created,
+            and the programming skills that I have been developing. 
+            At university, I learned Haskell, Java and Python, but I took a long 
+            hiatus before returning to programming in 2019. I majored in 
+            Mathematics for my undergrad, and I have a Master of Teaching. 
+            When I returned to programming, I started learning C as a hobby, 
+            and now I have gained experience with multiple programming 
+            languages, alongside knowledge of networking, shell scripting,
+            git, make, and data structures and algorithms.
+            </p>
+            <h3> Languages: </h3>
             <ul>
-                <li class="kenken">Kenken</li>
-                <li class="website">Website</li>
-                <li class="algos">Algorithms in C</li>
-                <li class="dateconvert">Date Converter</li>
-                <li class="scoredb">Score Database</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML/CSS/Javascript</li>
+                <li>Bash</li>
+                <li>Ocaml</li>
+                <li>R</li>
+                <li>SAS</li>
+                <li>Haskell</li>
+                <li>Java</li>
+            </ul>
+            <h3> Interests </h3>
+            <ul>
+                <li>Data Structures and Algorithms</li>
+                <li>Data Analysis (Python, SAS, SQL and R)</li>
+                <li>2D Graphics (mostly using SDL2)</li>
+                <li>Networking and Socket Programming</li>
+                <li>Backend web development with Django</li>
+                <li>Simulations</li>
+                <li>Scientific Computing</li>
+                <li>Embedded Development</li>
+            </ul>
+            <h3>Projects</h3>
+            <ul>
+                <li><a href="kenken/index.html">Kenken</a></li>
+                <li><a href="kenken/index.html">This Website</a></li>
+                <li><a href="kenken/index.html">Pong Clone</a></li>
+                <li><a href="kenken/index.html">Algorithms in C</a></li>
+                <li><a href="kenken/index.html">Date Converter</a></li>
+                <li><a href="kenken/index.html">Score Database</a></li>
+                <li><a href="kenken/index.html">Microcontroller Programming</a></li>
+                <li><a href="kenken/index.html">Beej's Guide to Network Programming</a></li>
+                <li><a href="kenken/index.html">Assorted Shell Scripts</a></li>
             </ul>
         </div>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
-</body>
-<footer>
-    <p>© W-flowers 2021</p>
-</footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    <footer>
+        <p>© W-flowers 2021</p>
+    </footer>
 </html>
